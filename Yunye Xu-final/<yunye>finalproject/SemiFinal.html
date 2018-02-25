@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Web interface for social networking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h1><b>Build your social network!</b></h1><br>
+    <img src="Friends.jpg" class="w3-image" style="display:block;margin:auto" width = 1500 height = 300/>
+    <div class="w3-padding-16">
+      <h3><b>Find friends with common interests!</b></h3>
+  <hr>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="picture-1.jpeg"  style="width:100%">
+      <h3>Tables and Views</h3>
+      <p>view all tables and views in the database: <b>(tables in bold upper case and views not)</b></p>
+      <a href="list_tables.php">List all tables and views!</a>
+      
+    
+    
+    </div>
+    <div class="w3-quarter">
+      <img src="picture-2.jpeg"  style="width:100% ">
+      <h3>User Names</h3>
+      <p>View all the users' first name: </p>
+      <a href="list_user_name.php">List all users' first name!</a>
+      
+
+    </div>
+    <div class="w3-quarter">
+      <img src="picture-4.jpeg"  style="width:100%">
+      <h3>User Information</h3>
+      <p>to get detailed information of a user, enter the user's first name.</p>
+     <form action="user_info.php" method="get">
+      First name: <input type="text" name="first_name" style="width:60%">
+      <br>
+      <br>
+      <input type="submit">
+    </form>    
+  </div>
+
+
+    <div class="w3-quarter">
+      <img src="picture-3.jpeg"  style="width:100%">
+      <h3>Find People's Hometown</h3>
+      <p>to find user coming from a certain country, enter country name.<br><b>(You can enter countries like: China, United States, Japan, India, South Korea, Canada)</b></p>
+     <form action="user_country.php" method="get">
+      Country: <input type="text" name="countryName" required style="width:60%">
+      <br>
+      <input type="submit">
+    </form> 
+  </div>
+  <hr>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="picture-5.jpg"  style="width:100%">
+      <h3>Photo Topics</h3>
+      <p>to get the number of photo about a certain theme, enter theme.<br><b>(like: weather, event, selfie, food, family)</b></p>
+      <form action="num_photo_theme.php" method="get">
+      Theme: <input type="text" name="theme" required style="width:60%">
+      <br>
+      <br>
+      <input type="submit">
+      </form>
+    </div>
+
+
+    <div class="w3-quarter">
+      <img src="picture-6.jpg" style="width:100%">
+      <h3>Education Background</h3>
+      <p>to get the number of users with certain degree, enter degree.<br><b>(like:bachelor, master, Phd)</b></p>
+      <form action="num_degree.php" method="get"><br>
+      Degree: <input type="text" name="user_degree" required style="width:60%">
+      <br><br>
+      <input type="submit">
+ 
+      </form>
+    </div>
+
+
+    <div class="w3-quarter">
+      <img src="picture-7.jpeg" style="width:100%">
+      <h3>Album Created Time</h3>
+      <p>to get users who created albums before a certain year, enter year.</p>
+      <form action="user_album_before_year.php" method="get">
+      Year: <input type="text" name="year" required style="width:60%">
+      <br><br>
+      <input type="submit">
+      </form>
+    </div>
+
+
+    <div class="w3-quarter">
+      <img src="picture-8.jpg" style="width:100%">
+      <h3>Album Name</h3>
+      <p>to get album name for photos about certain theme, enter theme.<br><b>(like: weather, event, selfie, food, family)</b></p>
+      <form action="album_photo_theme.php" method="get">
+      Theme: <input type="text" name="theme" required style="width:60%">
+      <br><br>
+      <input type="submit">
+      </form>
+ 
+  </div>
+
+  <!-- 
+Pagination  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+ -->
+  
+  
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Copyright Yunye Xu - 2017<br>
+        used CSS template from:<br> https://www.w3schools.com/w3css/<br>tryw3css_templates_food_blog.htm</p>
+    </div>
+  
+    
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Friends</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Interests</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hometown</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Networks</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Photos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Albums</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Alumni</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Birthday</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Common</span>
+        
+       
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<!-- <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script> -->
+
+</body>
+</html>

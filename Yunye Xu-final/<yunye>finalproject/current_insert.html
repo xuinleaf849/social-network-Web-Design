@@ -1,0 +1,30 @@
+<html>
+<body>
+<p>
+    <h1><b>Enter your current location here</b></h1>
+</p>
+<form method="post" action="current_location_insert.php">
+     Location ID: <input name="Loc_id" type="int" title="Location_ID" placeholder="eg.30" maxlength="150" required>
+    <br>
+    Current Country: <input name="current_country" type="text" title="current_country" placeholder="eg.United States" maxlength="150" required>
+    <br>
+    Current State: <input name="current_state" type="text" title="current_state" placeholder="eg.Illinois" maxlength="150" required>
+    <br>
+    Current City: <input name="current_city" type="text" title="current_city" placeholder="eg.Chicago" maxlength="150" required>
+    <br>
+
+     <input type="submit" value="Submit">
+ </form>
+
+<script type="text/javascript">
+    function goBack() {
+        window.history.back()
+    }
+</script>
+<!-- <a href="final.html">Go back to Main Page -->
+<form action="final.html">
+    <input type="submit" value="Go back to Main Page">
+</form>
+</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+1:
+Maybe I can synthesize the table of photo and cover_photo, together with user_id in a single table, so that I can get photo information with a more efficient link to table user and cover_photo.
+From the table, we can save the count of cover photo of each user and reduce data redundancy, then we can analyze for every user, which photos are belong to him/her, and for photos whether they are cover photos. On the other hand, for each user, which photo is his/her corresponding cover photo.
+
+And I can (by some way) add a time stamp to each set of this data,
+then save it into data warehouse.So that I can get preferences change on cover photo or life experience through this.
+
+2:
+By merging the table of education, link_education, user and friends, I can get further information and analyze the relationship and explore whether people with similar educational background tends to became friends with each other.
+On the other hand, from the users' perspective, users can search the other users and find friends by sorting educational background.
+
+3:
+Further deeper, I can synthesize the table of education, link_education with hometown_location and current_location. And there's a possibility to track every current_location of each user by creating a new table, which adds a time stamp in it. So that more interesting phenomena can be explored, like whether people who tend to move a lot have a higher tendency to gain better educational experience.
+
+Now the database has too few functions and attributes so the pros won't be clear,
+But as the database build on, I believe it will be more versatile and applicable in various fields.

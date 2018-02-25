@@ -1,0 +1,30 @@
+<html>
+<body>
+<p>
+    <h1><b>Enter your hometown location here</b></h1>
+</p>
+<form method="post" action="hometown_location_insert.php">
+     Location ID: <input name="Loc_id" type="int" title="Location_ID" placeholder="eg.30" maxlength="150" required>
+    <br>
+    Hometown Country: <input name="hometown_country" type="text" title="hometown_country" placeholder="eg.United States" maxlength="150" required>
+    <br>
+    Hometown State: <input name="hometown_state" type="text" title="hometown_state" placeholder="eg.Illinois" maxlength="150" required>
+    <br>
+    Hometown City: <input name="hometown_city" type="text" title="hometown_city" placeholder="eg.Chicago" maxlength="150" required>
+    <br>
+
+     <input type="submit" value="Submit">
+ </form>
+
+<script type="text/javascript">
+    function goBack() {
+        window.history.back()
+    }
+</script>
+<!-- <a href="final.html">Go back to Main Page -->
+<form action="final.html">
+    <input type="submit" value="Go back to Main Page">
+</form>
+</a>
+</body>
+</html>
